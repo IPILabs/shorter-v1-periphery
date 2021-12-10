@@ -1,0 +1,185 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IStrPool",
+  "sourceName": "contracts/interfaces/V1/IStrPool.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getInfo",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "creator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "stakedToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "stableToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "wrappedToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "leverage",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "durationDays",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startBlock",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endBlock",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stakedTokenDecimals",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stableTokenDecimals",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum IPoolGuardian.PoolStatus",
+          "name": "stateFlag",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isDelivery",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        }
+      ],
+      "name": "positionInfoMap",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "trader",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "closedFlag",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint64",
+          "name": "lastestFeeBlock",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "unsettledCash",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "remnantAsset",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalFee",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "percent",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawRemnantAsset",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

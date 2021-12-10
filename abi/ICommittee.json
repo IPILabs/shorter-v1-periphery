@@ -1,0 +1,185 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ICommittee",
+  "sourceName": "contracts/interfaces/V1/ICommittee.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "stakedToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "leverage",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "durationDays",
+          "type": "uint256"
+        }
+      ],
+      "name": "createPoolProposal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getUserShares",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalShare",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lockedShare",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "isRuler",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "proposalId",
+          "type": "uint256"
+        }
+      ],
+      "name": "proposalGallery",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "id",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address",
+          "name": "proposer",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "catagory",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint64",
+          "name": "startBlock",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "endBlock",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint256",
+          "name": "forShares",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "againstShares",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum ICommittee.ProposalStatus",
+          "name": "status",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bool",
+          "name": "displayable",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "proposalId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "direction",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "voteShare",
+          "type": "uint256"
+        }
+      ],
+      "name": "vote",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,83 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IPoolGuardian",
+  "sourceName": "contracts/interfaces/V1/IPoolGuardian.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "creator",
+          "type": "address"
+        }
+      ],
+      "name": "getCreatedPoolIds",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "poolIds",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "poolId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPoolInfo",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "stakedToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "strToken",
+          "type": "address"
+        },
+        {
+          "internalType": "enum IPoolGuardian.PoolStatus",
+          "name": "stateFlag",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "stakedToken",
+          "type": "address"
+        },
+        {
+          "internalType": "enum IPoolGuardian.PoolStatus",
+          "name": "status",
+          "type": "uint8"
+        }
+      ],
+      "name": "queryPools",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

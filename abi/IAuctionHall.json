@@ -1,0 +1,177 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAuctionHall",
+  "sourceName": "contracts/interfaces/V1/IAuctionHall.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "path",
+          "type": "bytes"
+        }
+      ],
+      "name": "bidKatana",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bidSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "priorityFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "bidTanto",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        }
+      ],
+      "name": "phase1Infos",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "bidSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "liquidationPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isSorted",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "flag",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        }
+      ],
+      "name": "phase2Infos",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "flag",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isWithdrawn",
+          "type": "bool"
+        },
+        {
+          "internalType": "address",
+          "name": "rulerAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "debtSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "usedCash",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "dexCoverReward",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "ruler",
+          "type": "address"
+        }
+      ],
+      "name": "queryResidues",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "stableTokenSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "debtTokenSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "priorityFee",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        }
+      ],
+      "name": "retrieve",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

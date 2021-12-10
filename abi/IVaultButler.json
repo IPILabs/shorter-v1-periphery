@@ -1,0 +1,72 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IVaultButler",
+  "sourceName": "contracts/interfaces/V1/IVaultButler.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bidSize",
+          "type": "uint256"
+        }
+      ],
+      "name": "executeNaginata",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        }
+      ],
+      "name": "legacyInfos",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "bidSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "usedCash",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "position",
+          "type": "address"
+        }
+      ],
+      "name": "priceOfLegacy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

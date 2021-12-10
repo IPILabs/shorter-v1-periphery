@@ -1,0 +1,181 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IFarming",
+  "sourceName": "contracts/interfaces/V1/IFarming.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "allPendingRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "govRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "farmingRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "voteAgainstRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tradingRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stakedRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "creatorRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "voteRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "tradingRewardPools",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "stakedRewardPools",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "createRewardPools",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "voteRewardPools",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserStakedAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "userStakedAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "govRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "farmingRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "voteAgainstRewards",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "tradingRewardPools",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "stakedRewardPools",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "createRewardPools",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "voteRewardPools",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "harvestAll",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lpToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "stake",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "unStake",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
