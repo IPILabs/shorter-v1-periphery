@@ -1,0 +1,27 @@
+{
+  "name": "shorter-v1-periphery",
+  "version": "2.1.4",
+  "description": "In-depth documentation on Shorter V1 is available at [shorter.finance](https://docs.shorter.finance/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IPILabs/shorter-v1-periphery"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.9.3"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "dotenv": "^16.0.0",
+    "hardhat-contract-sizer": "^2.5.1",
+    "hardhat-deploy": "^0.11.4",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13",
+    "hardhat-gas-reporter": "^1.0.8"
+  }
+}
