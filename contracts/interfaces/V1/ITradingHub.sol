@@ -16,7 +16,7 @@ interface ITradingHub {
         uint256 amountOutMin,
         address swapRouter,
         bytes memory path
-    ) external; 
+    ) external;
 
     function buyCover(
         uint256 poolId,
@@ -36,20 +36,19 @@ interface ITradingHub {
             PositionState positionState
         );
 
-    function getPositions(address account)
-        external
-        view
-        returns (address[] memory positions);
+    function getPositions(address account) external view returns (address[] memory positions);
 
     function isPoolWithdrawable(uint256 poolId) external view returns (bool);
 
-    function getPositionsByPoolId(uint256 poolId, PositionState positionState)
-        external
-        view
-        returns (address[] memory);
+    function getPositionsByPoolId(uint256 poolId, PositionState positionState) external view returns (address[] memory);
 
-    function getPositionsByState(PositionState positionState)
-        external
-        view
-        returns (address[] memory);
+    function getPositionsByState(PositionState positionState) external view returns (address[] memory);
+
+    // Events
+    event PositionOpened(uint256 indexed poolId, address indexed trader, address indexed positionAddr, uint256 orderSize);
+    event PositionIncreased(uint256 indexed poolId, address indexed trader, address indexed positionAddr, uint256 orderSize);
+    event PositionDecreased(uint256 indexed poolId, address indexed trader, address indexed positionAddr, uint256 orderSize);
+    event PositionClosing(address indexed positionAddr);
+    event PositionOverdrawn(address indexed positionAddr);
+    event PositionClosed(address indexed positionAddr);
 }

@@ -8,10 +8,7 @@ interface IFarming {
 
     function lpToken() external view returns (address);
 
-    function getUserStakedAmount(address user)
-        external
-        view
-        returns (uint256 userStakedAmount);
+    function getUserStakedAmount(address user) external view returns (uint256 userStakedAmount);
 
     function allPendingRewards(address user)
         external

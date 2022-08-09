@@ -10,10 +10,7 @@ interface IPoolGuardian {
         ENDED
     }
 
-    function queryPools(address stakedToken, PoolStatus status)
-        external
-        view
-        returns (uint256[] memory);
+    function queryPools(address stakedToken, PoolStatus status) external view returns (uint256[] memory);
 
     function getPoolInfo(uint256 poolId)
         external
@@ -24,8 +21,12 @@ interface IPoolGuardian {
             PoolStatus stateFlag
         );
 
-    function getCreatedPoolIds(address creator)
-        external
-        view
-        returns (uint256[] memory poolIds);
+    function getCreatedPoolIds(address creator) external view returns (uint256[] memory poolIds);
+
+    /// @notice Emitted when this contract is deployed
+    event PoolGuardianInitiated();
+    /// @notice Emitted when a delisted pool go back
+    event PoolListed(uint256 indexed poolId);
+    /// @notice Emitted when a listing pool is delisted
+    event PoolDelisted(uint256 indexed poolId);
 }

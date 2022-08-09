@@ -42,4 +42,19 @@ interface IStrPool {
             uint256 remnantAsset,
             uint256 totalFee
         );
+
+    function getFundingFee(address position) external view returns (uint256 totalFee_);
+
+    /// @notice Emitted when a new pool is created
+    event PoolActivated(uint256 indexed poolId);
+    /// @notice Emitted when user deposit tokens into a pool
+    event Deposit(address indexed user, uint256 indexed poolId, uint256 amount);
+    /// @notice Emitted when user harvest from a pool
+    event Harvest(address indexed user, uint256 indexed poolId, uint256 pending);
+    /// @notice Emitted when user withdraw from a pool
+    event Withdraw(address indexed user, uint256 indexed poolId, uint256 amount);
+    /// @notice Emitted when user borrow tokens from a pool
+    event Borrow(address indexed user, uint256 indexed poolId, uint256 amount);
+    /// @notice Emitted when user repay fund to a pool
+    event Repay(address indexed user, uint256 indexed poolId, uint256 amount);
 }
